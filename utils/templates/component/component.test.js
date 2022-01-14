@@ -8,13 +8,8 @@ import ${paschalCaseName} from "../${kebabCaseName}";
 
 describe("${paschalCaseName}", () => {
 
-  beforeEach(() => {
-    props = {
 
-    };
-  });
-
-  const renderComponent = () => render(<${paschalCaseName} {...props} />);
+  const renderComponent = () => render(<${paschalCaseName}/>);
 
   it("should render correctly", () => {
     // Arrange
