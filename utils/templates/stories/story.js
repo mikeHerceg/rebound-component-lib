@@ -3,7 +3,7 @@ module.exports = (kebabCaseName, paschalCaseName, titleCase) => ({
     import React from 'react';
     import { ComponentStory, ComponentMeta } from '@storybook/react';
     
-    import ${paschalCaseName} from '../../${kebabCaseName}';
+    import ${paschalCaseName} from '../${kebabCaseName}';
     
     export default {
       title: 'Components/${titleCase}',

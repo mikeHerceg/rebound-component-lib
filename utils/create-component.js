@@ -61,12 +61,22 @@ generatedStories.forEach((story) => {
 //add index file
 fs.writeFile(
   `${componentDirectory}/index.tsx`,
-  `export { default } from './${kebabCase}';`,
+  `export * from './${kebabCase}';`,
   function(err, result) {
     if(err) console.log('error', err);
   }
 );
 
+
+//add component to main exports
+fs.appendFile('./src/index.tsx', 
+`\nexport { ${paschalCase} } from './components/${kebabCase}';`
+, err => {
+  if (err) {
+    console.error(err)
+    return
+  }
+});
 
 console.log(
   "Successfully created component under: " + componentDirectory.green
