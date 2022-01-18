@@ -1,5 +1,5 @@
 module.exports = (kebabCaseName, paschalCaseName) => ({
-  content: `// Generated with util/create-component.js
+  content: `//
 
 `,
   extension: `.module.scss`,
