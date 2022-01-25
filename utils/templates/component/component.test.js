@@ -4,7 +4,7 @@ module.exports = (kebabCaseName, paschalCaseName) => ({
 import React from "react";
 import { render } from "@testing-library/react";
 
-import ${paschalCaseName} from "../${kebabCaseName}";
+import ${paschalCaseName} from "./${kebabCaseName}";
 
 describe("${paschalCaseName}", () => {
 

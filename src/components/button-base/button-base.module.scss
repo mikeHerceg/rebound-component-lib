@@ -1,0 +1,13 @@
+.button-base{
+    outline:none;
+    border:none;
+    background:none;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    &:hover{
+        cursor:pointer;
+    }
+    :focus{
+        outline:none;
+    }
+}
