@@ -13,10 +13,12 @@ export const ButtonBase = ({
   children,
   className,
   disabled,
-  onClick
+  onClick,
+  ...props
 }:ButtonBaseProps) => {
   return (
     <button 
+      {...props}
       onClick={onClick}
       data-testid="button-base" 
       className={`${styles['button-base']} ${className}` }
