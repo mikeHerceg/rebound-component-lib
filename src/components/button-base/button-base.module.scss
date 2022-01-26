@@ -4,6 +4,10 @@
     background:none;
     text-transform: uppercase;
     letter-spacing: .08em;
+    padding:var(--spacer);
+    border-radius: var(--rounded-border-small);
+    border-style: solid;
+    border-width:2px;
     &:hover{
         cursor:pointer;
     }
