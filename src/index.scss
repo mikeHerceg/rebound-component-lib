@@ -1,75 +1,79 @@
-body{
-        //color scheme
-        --tint1:#fff;    
-        --tint2:#fbfbfb; 
-        --tint3:#f2f2f2;    
-        --tint4:#ebebeb; 
-        --tint5:#e4e3e2;    
-        --tint6:#cdcecd;
-        --tint7:#bfc1c0;
-        --tint8:#8a8a8a;
-        --tint9:#222222;
+body {
+  //color scheme
+  --tint1: #fff;
+  --tint2: #fbfbfb;
+  --tint3: #f2f2f2;
+  --tint4: #ebebeb;
+  --tint5: #e4e3e2;
+  --tint6: #cdcecd;
+  --tint7: #bfc1c0;
+  --tint8: #8a8a8a;
+  --tint9: #222222;
 
-        --blue1:#e5f0f9;
-        --blue2:#d8e7f8;
-        --blue3:#d8e7f8;
-        --blue4:#67aaed;
+  --blue1: #e5f0f9;
+  --blue2: #d8e7f8;
+  --blue3: #d8e7f8;
+  --blue4: #67aaed;
 
-        --green1:#e1ede3;
-        --green2:#d4e8d9;
-        --green3:#c0ddc5;
-        --green4:#94ce9c;
+  --green1: #e1ede3;
+  --green2: #d4e8d9;
+  --green3: #c0ddc5;
+  --green4: #94ce9c;
 
-        --orange1:#fcefde;
-        --orange2:#ffebcf;
-        --orange3:#ffd69f;
-        --orange4:#fec271;
+  --orange1: #fcefde;
+  --orange2: #ffebcf;
+  --orange3: #ffd69f;
+  --orange4: #fec271;
 
-        --red1:#f7d9d9;
-        --red2:#f5cccd;
-        --red3:#eb999a;
-        --red4:#df6669;
-        
-        
-        
-        //theme
-        --primary:var(--blue4);
-        --secondary:var(--blue3);
-    
-        --white:var(--tint1);
-        --black:var(--tint9);
-        
-        --success:var(--green4);
-        --warning:var(--orange4);
-        --danger:var(--red4);
-    
-        --background-color:var(--tint3);
-        --text-color:var(--tint9);
-    
-        --button-background-color:var(--primary);
-        --button-text-color:var(--tint2);
-        
-    
-        --shadow:0px 0px 10px 3px rgba(0,0,0,0.21);
-        --shadow-small:0px 0px 5px 2px rgba(0,0,0,0.21);    
-        --shadow-large:0px 0px 15px 5px rgba(0,0,0,0.21);
-        
-        --spacer:8px;
-        --spacer-medium:calc(3 * var(--spacer));
-        --spacer-large:calc(5 * var(--spacer));
-        
-        --transition:cubic-bezier(.57,.21,.69,1.25) all .15s;
-        --transition-slow:cubic-bezier(.57,.21,.69,1.25) all .35s;
-    
-        --border:2px solid var(--tint5);
-        --rounded-border:40px;
-        --rounded-border-small:15px;
-    //styles
-        transition: var(--transition);
-        background:var(--background-color);
-        min-height: 100vh;
-        width: 100vw;
-        position: relative;
-        color:var(--text-color) !important;
-    
+  --red1: #f7d9d9;
+  --red2: #f5cccd;
+  --red3: #eb999a;
+  --red4: #df6669;
+
+  //theme
+  --primary: var(--blue4);
+  --secondary: var(--blue3);
+
+  --white: var(--tint1);
+  --black: var(--tint9);
+
+  --success: var(--green4);
+  --warning: var(--orange4);
+  --danger: var(--red4);
+
+  --background-color: var(--tint3);
+  --text-color: var(--tint9);
+
+  --button-background-color: var(--primary);
+  --button-text-color: var(--tint2);
+
+  --shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.21);
+  --shadow-small: 0px 0px 5px 2px rgba(0, 0, 0, 0.21);
+  --shadow-large: 0px 0px 15px 5px rgba(0, 0, 0, 0.21);
+
+  --spacer: 8px;
+  --spacer-medium: calc(3 * var(--spacer));
+  --spacer-large: calc(5 * var(--spacer));
+
+  --transition: cubic-bezier(0.57, 0.21, 0.69, 1.25) all 0.15s;
+  --transition-slow: cubic-bezier(0.57, 0.21, 0.69, 1.25) all 0.35s;
+
+  --border: 2px solid var(--tint5);
+  --rounded-border: 40px;
+  --rounded-border-small: 15px;
+
+  //Type variables
+  --base-text-size: 1rem; //16px
+  --base-lineheight: var(--spacer) * 3; //24
+
+  --font-family: Helvetica, "sans-serif";
+  //font weights should be based on fonts loaded into project.
+  --base-font-weight: 400;
+  --bold: 800;
+  --semi-bold: 600;
+  --thin: 200;
+
+  font-size: var(--base-text-size);
+  line-height: var(--base-lineheight);
+  font-weight: var(--base-font-weight);
 }

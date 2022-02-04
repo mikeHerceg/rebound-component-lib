@@ -13,8 +13,9 @@
   background: var(--button-color);
   color: var(--text-color);
   transition: var(--transition-slow);
+  font-weight: var(--semi-bold);
   border-color: var(--button-color);
-  &:hover {
+  &:hover:not(:disabled) {
     border-color: var(--tint4);
     background: var(--text-color);
     color: var(--button-color);
@@ -22,6 +23,14 @@
     cursor: pointer;
     box-shadow: var(--shadow-small);
   }
-  :focus {
+  &:disabled {
+    --disbaled-color: var(--tint6);
+    border-color: var(--disbaled-color);
+    background: var(--disbaled-color);
+    color: var(--tint1);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--button-color);
+    outline-offset: calc(var(--spacer) * 0.5);
   }
 }
