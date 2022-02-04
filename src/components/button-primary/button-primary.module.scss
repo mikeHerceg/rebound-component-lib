@@ -1,15 +1,5 @@
 //
 
 .primary{
-    background:var(--primary);
-    color:var(--tint1);
-    transition:var(--transition-slow);    
-    border-color:var(--primary);
-    &:hover{
-        border-color:var(--tint4);
-        background: var(--tint1);
-        color:var(--primary);
-        transition:var(--transition-slow);
-
-    }
+    --button-color:var(--primary);
 }

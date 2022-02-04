@@ -1,17 +1,27 @@
-.button-base{
-    outline:none;
-    border:none;
-    background:none;
-    text-transform: uppercase;
-    letter-spacing: .08em;
-    padding:var(--spacer);
-    border-radius: var(--rounded-border-small);
-    border-style: solid;
-    border-width:2px;
-    &:hover{
-        cursor:pointer;
-    }
-    :focus{
-        outline:none;
-    }
+.button-base {
+  --button-color: var(--black);
+  --text-color: var(--white);
+  outline: none;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: var(--spacer);
+  border-radius: var(--rounded-border);
+  border-style: solid;
+  border-width: 2px;
+  background: var(--button-color);
+  color: var(--text-color);
+  transition: var(--transition-slow);
+  border-color: var(--button-color);
+  &:hover {
+    border-color: var(--tint4);
+    background: var(--text-color);
+    color: var(--button-color);
+    transition: var(--transition-slow);
+    cursor: pointer;
+    box-shadow: var(--shadow-small);
+  }
+  :focus {
+  }
 }

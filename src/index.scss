@@ -1,5 +1,6 @@
 body{
-    --tint1:#fff;    
+        //color scheme
+        --tint1:#fff;    
         --tint2:#fbfbfb; 
         --tint3:#f2f2f2;    
         --tint4:#ebebeb; 
@@ -28,9 +29,16 @@ body{
         --red2:#f5cccd;
         --red3:#eb999a;
         --red4:#df6669;
+        
+        
+        
+        //theme
         --primary:var(--blue4);
         --secondary:var(--blue3);
     
+        --white:var(--tint1);
+        --black:var(--tint9);
+        
         --success:var(--green4);
         --warning:var(--orange4);
         --danger:var(--red4);
