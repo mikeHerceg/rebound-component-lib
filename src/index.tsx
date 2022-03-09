@@ -7,3 +7,4 @@ export { ButtonSuccess } from './components/button-success';
 export { ButtonDanger } from './components/button-danger';
 export { ButtonWarning } from './components/button-warning';
 export { Card } from './components/card';
+export { Loader } from './components/loader';
