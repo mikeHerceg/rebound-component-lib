@@ -1,5 +1,5 @@
-import styles from './atoms.module.scss';
-
+// import styles from './atoms.module.scss';
+import React from 'react';
 interface ErrorProps {
     text?:string
 }

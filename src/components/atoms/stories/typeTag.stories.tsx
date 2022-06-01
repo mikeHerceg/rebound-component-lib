@@ -1,8 +1,7 @@
 
 import React from 'react';
 import { ComponentStory } from '@storybook/react';
-import { TypeTag } from '..';
-import { Tags } from '../../../generic.types';
+import { TypeTag, Tags } from '..';
 
 export default {
   title: 'Atoms/Type Tag',
