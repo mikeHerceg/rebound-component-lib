@@ -1,3 +1,4 @@
+import React from 'react';
 import { AccordionItemInterface } from '../accordion.types';
 import { useAccordion } from '../accordion.hooks';
 import styles from '../accordion.module.scss';

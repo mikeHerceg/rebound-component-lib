@@ -1,4 +1,5 @@
-import { Button } from '../../buttons/button';
+import React from 'react';
+// import { Button } from '../../buttons/button';
 import { Field } from '../form.types';
 import { useFormWrapper } from './form-wrapper.hooks';
 
@@ -14,7 +15,8 @@ export function FormWrapper({ fields }:FormWrapperProps) {
   return (
     <form onSubmit={e => handleSubmit(e)} noValidate>
       {handleFields()}
-      <Button type="submit" text="submit" />
+      <button type="submit">submit</button>
+      {/* <Button type="submit" text="submit" /> */}
     </form>
   );
 }
